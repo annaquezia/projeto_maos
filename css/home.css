@@ -1,0 +1,79 @@
+.texto {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.texto h2 {
+    font-family: var(--titulo), Serif, serif;
+    font-size: 5vw;
+    margin-right: 3vh;
+}
+
+.texto p {
+    font-family: var(--corpo), monospace;
+    font-weight: 600;
+    font-size: 2vw;
+    margin-right: 3vh;
+    margin-top: 1vh;
+    margin-left: 50vh;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh;
+}
+
+.card {
+    width: 30%;
+    height: 50vh;
+    background-color: var(--cor-letras);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1vh;
+    position: relative;
+}
+
+.card:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.card figure {
+    width: 100%;
+    height: 20%;
+    margin: 5vh;
+}
+
+.card figure img {
+    width: 15%;
+}
+
+.card article {
+    color: var(--cor-fundo);
+    font-family: var(--corpo), Serif, serif;
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin: 5vh;
+    position: absolute;
+    top: 36vh;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover article {
+    top: 23vh;
+    transition: 0.5s;
+}
+
+.card article p {
+    font-weight: 400;
+    font-size: 1vw;
+    margin-top: 3vh;
+}

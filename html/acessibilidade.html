@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/acessibilidade.css">
+    <title>Acessibilidade</title>
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="../index.html"><img src="../imagens/logo.svg" alt="logo do projeto mãos"></a></li>
+        <li><a href="libras.html">A história da LIBRAS</a></li>
+        <li><a href="surdo.html">Surdo vs Deficiente Auditivo</a></li>
+        <li><a href="acessibilidade.html">Meios de acessibilidade</a></li>
+        <li><a href="diaNacionalDoSurdo.html">Dia nacional dos surdos</a></li>
+    </ul>
+</header>
+
+
+<div class="container">
+    <div class="titulo">
+        <img src="../imagens/acessibilidade-preto.svg" alt="libras">
+        <h2>Meios de acessibilidade</h2>
+    </div>
+
+    <div class="texto">
+        <p>Você já ouviu falar em tecnologia assistivas? É um termo usado para se referir às ferramentas de acessibilidade
+            que facilitam o cotidiano de pessoas com deficiência. Dentro da comunidade surda a várias coisas que podemos
+            fazer para facilitar a vida deles, aqui vão alguns exemplos:</p>
+    </div>
+
+    <div class="texto-imagem">
+        <article>
+            <ul>
+                <li>Legenda em vídeos</li>
+            </ul>
+            <p>	As legendas auxiliam principalmente os surdos oralizados, fazendo com que seja possível transmitir o
+                conteúdo que está a ser transmitido em áudio.</p>
+            <ul>
+                <li>Intérprete de Libras</li>
+            </ul>
+            <p>	Os intérpretes de Libras são uma solução fundamental para garantir a acessibilidade das pessoas surdas e
+                com deficiência auditiva, principalmente para os sinalizastes. Eles são profissionais habilitados capazes
+                de fazer a tradução das mensagens que estão a ser transmitidas por voz para a língua de sinais brasileira.
+                Eles são de extrema necessidade em qualquer vídeo, campanha eleitoral, filmes, eventos, palestras, ‘shows’ e muito mais.</p>
+            <ul>
+                <li>VLibras</li>
+            </ul>
+            <p>	O VLibras é uma tradução automática para tornar as aplicações ‘web’ mais acessíveis. Feito através da
+                parceria entre o Ministério da Gestão e Inovação em Serviços Públicos e a Universidade Federal da Paraíba,
+                o VLibras permite que as pessoas surdas acessem conteúdo multimídia na sua língua natural de comunicação,
+                contribuindo para a acessibilidade de computadores, aplicativos móveis e páginas ‘web’. O maior ponto
+                positivo é que o VLibras é gratuito e super fácil de implementar no seu site.</p>
+        </article>
+        <figure>
+            <img src="/imagens/vlibras.png" alt="icône VLibras">
+        </figure>
+    </div>
+</div>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>

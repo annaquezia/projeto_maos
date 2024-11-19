@@ -1,0 +1,53 @@
+/*variaveis*/
+
+:root {
+    --titulo: 'Syne';
+    --corpo: 'Montserrat';
+    --cor-fundo: #FFFFFF;
+    --cor-letras: #000000;
+    --blue: #202A44;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    margin: 3vh 3vw 3vh 0;
+}
+
+header ul li {
+    list-style: none;
+    width: 100%;
+}
+
+header ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor-letras);
+    font-family: var(--titulo), Serif, serif;
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+header ul li a img {
+    width: 50%;
+    display: block;
+    margin: auto;
+ }
+
+header ul li a:hover {
+    font-weight: 800;
+    font-size: 0.8vw;
+}

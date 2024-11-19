@@ -1,0 +1,65 @@
+.titulo{
+    display: flex;
+    align-items: center;
+    margin: 8vh 5vw;
+}
+
+.titulo h2 {
+    font-size: 4vw;
+    font-family: var(--titulo), Serif, serif;
+    margin-left: 2vw;
+}
+
+.titulo img {
+    width: 5%;
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    padding: 5vw 20vw;
+}
+
+.texto p {
+    font-family: var(--corpo), monospace;
+    font-size: 1.4vw;
+    color: var(--cor-fundo);
+    text-align: center;
+}
+
+.texto-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh 10vw;
+}
+
+.texto-imagem ul li {
+    text-align: right;
+    list-style: none;
+    margin: 4vh 3vw 1vh 0;
+    font-family: var(--titulo), Serif, serif;
+    font-size: 1.6vw;
+}
+
+.texto-imagem p {
+    text-align: right;
+    margin-right: 3vw;
+    font-family: var(--corpo), monospace;
+    font-size: 1.4vw;
+}
+
+.texto-imagem article {
+    width: 70%;
+}
+
+.texto-imagem figure {
+    width: 30%;
+}
+
+.texto-imagem figure img {
+    width: 75%;
+    border-radius: 20px;
+}

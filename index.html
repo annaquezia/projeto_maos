@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Projeto Mãos</title>
+</head>
+<body>
+<div class="home">
+    <div class="container">
+        <div class="texto">
+            <h2>Conheça o projeto mãos!!</h2>
+            <p>Um projeto que tem o intuito de dar visibilidade as pessoas com deficiência auditiva e surdez da nossa comunidade</p>
+        </div>
+        <div class="cards">
+            <div class="card" id="libras">
+                <figure>
+                    <img src="imagens/libras.svg" alt="libras">
+                </figure>
+                <article>
+                    <h3>01. A HISTÓRIA DAS LIBRAS</h3>
+                    <p>Descubra mais sobre a história das libras e como ela se tornou uma das línguas oficias do Brasil.</p>
+                </article>
+            </div>
+            <div class="card" id="surdo">
+                <figure>
+                    <img src="imagens/surdo.svg" alt="simbolo de surdez">
+                </figure>
+                <article>
+                    <h3>02. SURDO VS DEFICIENTE AUDITIVO</h3>
+                    <p>Você já parou para pensar qual a diferença entre surdo e deficiente auditivo? Não? Então a gente conta
+                    pra você</p>
+                </article>
+            </div>
+            <div class="card" id="acessibilidade">
+                <figure>
+                    <img src="imagens/acessibilidade.svg" alt="icône de acessibilidade">
+                </figure>
+                <article>
+                    <h3>03. MEIOS DE ACESSIBILIDADE</h3>
+                    <p>A acessibilidade nos rodeia em diversos locais, mas você sabe quais auxiliam as pessoas surdas?</p>
+                </article>
+            </div>
+            <div class="card" id="diaNacionalSurdo">
+                <figure>
+                    <img src="imagens/teamo.svg" alt="eu te amo em libras">
+                </figure>
+                <article>
+                    <h3>04. DIA NACIONAL DOS SURDOS</h3>
+                    <p>Saiba mais sobre o Dia Nacional do Surdo!! Nós também vamos te recomendar filmes que permeiam essa
+                    temática</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('libras').addEventListener('click', function libras() {
+        window.location.href = 'html/libras.html';
+    });
+
+    document.getElementById('surdo').addEventListener('click', function surdo() {
+        window.location.href = 'html/surdo.html';
+    });
+
+    document.getElementById('acessibilidade').addEventListener('click', function acessibilidade() {
+        window.location.href = 'html/acessibilidade.html';
+    });
+
+    document.getElementById('diaNacionalSurdo').addEventListener('click', function diaNacionalDoSurdo() {
+        window.location.href = 'html/diaNacionalDoSurdo.html';
+    });
+</script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>

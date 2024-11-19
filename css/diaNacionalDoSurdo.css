@@ -1,0 +1,35 @@
+.titulo{
+    display: flex;
+    align-items: center;
+    margin: 8vh 5vw;
+}
+
+.titulo h2 {
+    font-size: 4vw;
+    font-family: var(--titulo), Serif, serif;
+    margin-left: 2vw;
+}
+
+.titulo img {
+    width: 5%;
+}
+
+.imagem-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vw;
+}
+
+.imagem-texto p {
+    text-align: left;
+    margin-left: 3vw;
+    font-family: var(--corpo), monospace;
+    font-size: 1.4vw;
+;
+}
+
+.imagem-texto img {
+    width: 35%;
+    border-radius: 20px;
+}
